@@ -1,0 +1,13 @@
+docker run -p 3000:3000 -v /home/node/app/  -v df8160db
+
+docker run -p 3000:3000 -v /home/node/app/node_modules -v $(pwd):/home/node/app df8160db
+
+docker-compose up
+
+docker run -it df8160db npm run test
+
+docker exec -it a668b0c60e83  npm run test
+
+docker exec -it a668b0c60e83 sh
+
+docker run -p 8080:80 481b8e19
